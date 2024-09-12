@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Mentor | E-commerce product page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Kumbh+Sans:100,200,300,regular,500,600,700,800,900"
+        rel="stylesheet" />
+    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img id="menu-icon" src="images/icon-menu.svg" alt="icon-menu" draggable="false">
+                <img src="images/logo.svg" alt="logo">
+            </div>
+            <div class="list">
+                <img id="close" src="images/icon-close.svg" alt="icon-close" draggable="false">
+                <a href="/">Collections</a>
+                <a href="/">Men</a>
+                <a href="/">Women</a>
+                <a href="/">About</a>
+                <a href="/">Contact</a>
+            </div>
+        </nav>
+        <div class="user-detail-section">
+            <div class="cart">
+                <img src="images/icon-cart.svg" alt="cart" id="cart-icon">
+                <span class="cart-count">0</span>
+                <div class="cart-box">
+                    <h3>Cart</h3>
+                    <div class="cart-container">
+                        <p>Your cart is empty</p>
+                    </div>
+                </div>
+            </div>
+            <div class="user-icon">
+                <img src="images/image-avatar.png" alt="">
+            </div>
+        </div>
+    </header>
+
+    <!-- start container -->
+
+    <main class="container">
+        <section class="image-section">
+            <div class="main-img">
+                <img src="images/image-product-1.jpg" alt="image-product-1" draggable="false" id="main-light-open">
+            </div>
+            <div class="container-image">
+                <div class="image-box active">
+                    <img src="images/image-product-1-thumbnail.jpg" alt="image-product-1-thumbnail" draggable="false">
+                </div>
+                <div class="image-box">
+                    <img src="images/image-product-2-thumbnail.jpg" alt="image-product-2-thumbnail" draggable="false">
+                </div>
+                <div class="image-box">
+                    <img src="images/image-product-3-thumbnail.jpg" alt="image-product-3-thumbnail" draggable="false">
+                </div>
+                <div class="image-box">
+                    <img src="images/image-product-4-thumbnail.jpg" alt="image-product-4-thumbnail" draggable="false">
+                </div>
+            </div>
+
+            <div class="parent-image-lightBox">
+                <div class="main-img main-light-img">
+                    <div class="image-close">
+                        <svg width="14" height="15" xmlns="http://www.w3.org/2000/svg"><path d="m11.596.782 2.122 2.122L9.12 7.499l4.597 4.597-2.122 2.122L7 9.62l-4.595 4.597-2.122-2.122L4.878 7.5.282 2.904 2.404.782l4.595 4.596L11.596.782Z" fill="#eee" fill-rule="evenodd"/></svg></div>
+                    <img src="images/image-product-1.jpg" alt="image-product-1" draggable="false">
+
+                </div>
+                <div class="container-image">
+                    <div class="image-lightBox active-light">
+                        <img src="images/image-product-1-thumbnail.jpg" alt="image-product-1-thumbnail"
+                            draggable="false">
+                    </div>
+                    <div class="image-lightBox">
+                        <img src="images/image-product-2-thumbnail.jpg" alt="image-product-2-thumbnail"
+                            draggable="false">
+                    </div>
+                    <div class="image-lightBox">
+                        <img src="images/image-product-3-thumbnail.jpg" alt="image-product-3-thumbnail"
+                            draggable="false">
+                    </div>
+                    <div class="image-lightBox">
+                        <img src="images/image-product-4-thumbnail.jpg" alt="image-product-4-thumbnail"
+                            draggable="false">
+                    </div>
+                </div>
+            </div>
+
+            <div class="image-slider-container">
+                <div class="image-slider">
+                    <img src="images/image-product-1.jpg" alt="image-product-1">
+                    <img src="images/image-product-2.jpg" alt="image-product-2">
+                    <img src="images/image-product-3.jpg" alt="image-product-3">
+                    <img src="images/image-product-4.jpg" alt="image-product-4">
+                </div>
+                <button class="prev"><i class="fas fa-angle-left"></i></button>
+                <button class="next"><i class="fas fa-angle-right"></i></button>
+            </div>
+        </section>
+        <section class="product-detail">
+            <p class="company">Sneaker Company</p>
+            <h1>Fall Limited Edition Sneakers</h1>
+            <p class="para">These low-profile sneakers are your perfect casual wear companion. Featuring a
+                durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+            <div class="curr">
+                <p class="currency">$125.00<span>50%</span></p>
+                <span class="curr-currency">$250.00</span>
+            </div>
+            <div class="btn-group">
+                <div class="cart-btn">
+                    <img src="images/icon-minus.svg" alt="icon-minus">
+                    <span>0</span>
+                    <img src="images/icon-plus.svg" alt="icon-plus">
+                </div>
+                <button class="btn"><i class="fas fa-shopping-cart"></i>Add to cart</button>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
