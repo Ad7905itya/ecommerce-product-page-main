@@ -419,7 +419,6 @@ nav {
     border-radius: 50%;
     border: none;
     position: absolute;
-    z-index: -1;
     cursor: pointer;
 }
 
