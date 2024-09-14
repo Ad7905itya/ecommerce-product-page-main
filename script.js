@@ -17,11 +17,15 @@ const mainLightOpen = document.querySelector('#main-light-open');
 
 menuIcon.addEventListener('click', () => {
     list.classList.toggle("show");
+    prev.style.zIndex =  -1;
+    next.style.zIndex = -1;
 })
 
 close.addEventListener('click', () => {
     list.classList.toggle('hide');
     list.classList.remove('hide', 'show');
+    prev.style.zIndex =  0;
+    next.style.zIndex = 0;
 })
 
 cartIcon.addEventListener('mouseover', () => {
@@ -41,6 +45,8 @@ document.addEventListener('click', (e) => {
     if (!list.contains(e.target) && e.target !== menuIcon) {
         list.classList.toggle('hide');
         list.classList.remove('hide', 'show');
+        prev.style.zIndex =  0;
+    next.style.zIndex = 0;
     }
     if (!cartBox.contains(e.target) && e.target !== cartIcon) {
         cartBox.classList.remove('show');
