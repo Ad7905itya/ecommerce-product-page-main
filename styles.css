@@ -398,6 +398,7 @@ nav {
 .image-slider-container{
     display: none;
     position: relative;
+    overflow: hidden;
 }
 
 .image-slider{
@@ -424,12 +425,13 @@ nav {
 
 .prev{
     top: 50%;
+    left: 10px;
     transform: translate(0,-50%);
 }
 
 .next{
     top: 50%;
-    right: 0;
+    right: 10px;
     transform: translate(0,-50%);
 }
 
